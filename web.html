@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Midterm Challenge</title>
+    <link rel="stylesheet" href="web.css">
+</head>
+
+<body>
+    <!-- الشعار باستخدام SVG -->
+    <header id="top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 15" width="100" height="50">
+            <rect width="30" height="5" fill="#007A3D" /> <!-- اللون الأخضر -->
+            <rect width="30" height="5" y="5" fill="#FFF" /> <!-- اللون الأبيض -->
+            <rect width="30" height="5" y="10" fill="#CE1126" /> <!-- اللون الأحمر -->
+            <polygon points="0,0 6,7.5 0,15" fill="#000" /> <!-- اللون الأسود -->
+        </svg>
+    </header>
+
+    <!-- شريط التنقل -->
+    <nav class="navbar" id="navbar">
+        <ul>
+            <li><a href="#top">Top</a></li>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#palestine">Palestine</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#bottom">Bottom</a></li>
+        </ul>
+    </nav>
+
+    <!-- تاب بار للأجهزة اللوحية -->
+    <nav id="tabBar" class="tab-bar">
+        <ul>
+            <li><a href="#top">Top</a></li>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#palestine">Palestine</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#bottom">Bottom</a></li>
+        </ul>
+    </nav>
+
+    <!-- همبرغر مينو للأجهزة المحمولة -->
+    <div id="hamburgerMenu" class="hamburger-menu" onclick="toggleHamburgerMenu()">
+        &#9776; Menu
+    </div>
+
+    <!-- قسم "Build Your Mindset" -->
+    <section id="introduction">
+        <div class="intro-content">
+            <h2>Build Your Mindset</h2>
+            <p>Here is where you focus on building the mindset you need to succeed...</p>
+        </div>
+    </section>
+
+    <!-- بطاقات المدن الفلسطينية -->
+    <section id="palestine">
+        <h2>Palestine Governorates</h2>
+        <div class="card-container">
+            <!-- إضافة المدن الفلسطينية -->
+            <div class="card">
+                <img src="https://www.learnreligions.com/thmb/jhrcHUY9qwBxnfZ624iRp-x_GOY=/2121x1414/filters:fill(auto,1)/Bethlehem-at-Night-533543800-58e7be623df78c51624f1172.jpg" alt="Bethlehem">
+                <h3>Bethlehem</h3>
+                <p>Bethlehem is a city in the West Bank, Palestine, known for its historical and religious significance.
+                    It is the birthplace of Jesus Christ.</p>
+                <ul>
+                    <li>Historical and religious site</li>
+                    <li>Birthplace of Jesus Christ</li>
+                    <li>Known for its ancient churches and landmarks</li>
+                </ul>
+            </div>
+            <div class="card">
+                <img src="https://tse4.mm.bing.net/th/id/OIP.yJOF0kQUj962ZrrdwL-SlQHaEs?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Hebron">
+                <h3>Hebron</h3>
+                <p>Hebron is one of the oldest cities in the world and an important religious site in Islam, Judaism,
+                    and Christianity.</p>
+                <ul>
+                    <li>Famous for the Cave of the Patriarchs</li>
+                    <li>Historical significance in all three Abrahamic religions</li>
+                    <li>Known for its rich cultural heritage</li>
+                </ul>
+            </div>
+            <div class="card">
+                <img src="https://www.middleeasteye.net/sites/default/files/jenin%20camp.jpeg" alt="Jenin">
+                <h3>Jenin</h3>
+                <p>Jenin is located in the northern West Bank and is famous for its historical sites and agriculture.
+                </p>
+                <ul>
+                    <li>Historical significance in the region</li>
+                    <li>Famous for its olive groves and agriculture</li>
+                    <li>Beautiful landscapes and natural scenery</li>
+                </ul>
+            </div>
+            <div class="card">
+                <img src="https://th.bing.com/th/id/R.98182b420ec54966b6bd78bd70e60632?rik=CU%2fUprmJ%2bODJTg&riu=http%3a%2f%2fbramanswanderings.files.wordpress.com%2f2012%2f12%2fjericho-walls.jpg&ehk=9u0SPETiHqTjxSmd9cbOe6Lc1CEeDJdf%2f5VcHfsEfz4%3d&risl=1&pid=ImgRaw&r=0" alt="Jericho">
+                <h3>Jericho</h3>
+                <p>Jericho is one of the oldest inhabited cities in the world, known for its ancient ruins and its role
+                    in Biblical history.</p>
+                <ul>
+                    <li>Ancient city with archaeological significance</li>
+                    <li>Known as the "City of Palms"</li>
+                    <li>Located near the Jordan River</li>
+                </ul>
+            </div>
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.kD-yya7OfTyFMzCOcUB_wwHaE8?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Nablus">
+                <h3>Nablus</h3>
+                <p>Nablus is known for its rich cultural heritage, and its famous olive oil and soap production.</p>
+                <ul>
+                    <li>Famous for traditional olive oil production</li>
+                    <li>Known for its soap-making industry</li>
+                    <li>Rich history and culture</li>
+                </ul>
+            </div>
+            <div class="card">
+                <img src="https://i.postimg.cc/mkQ4gKvK/Best-places-to-visit-in-Qalqilya.jpg" alt="Qalqilya">
+                <h3>Qalqilya</h3>
+                <p>Qalqilya is located in the northwestern West Bank and is known for its agricultural importance.</p>
+                <ul>
+                    <li>Known for its agriculture and farming</li>
+                    <li>Rich in citrus fruit production</li>
+                    <li>Strategic location near Israel</li>
+                </ul>
+            </div>
+            <div class="card">
+                <img src="https://live.staticflickr.com/3375/3623383664_2f88662c3e_b.jpg" alt="Quds">
+                <h3>Quds (Jerusalem)</h3>
+                <p>Jerusalem is a city of immense religious significance in Judaism, Christianity, and Islam.</p>
+                <ul>
+                    <li>Religious significance for three major religions</li>
+                    <li>Home to sacred sites like the Western Wall and Al-Aqsa Mosque</li>
+                    <li>Cultural and historical hub</li>
+                </ul>
+            </div>
+            <div class="card">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.55BsF4jsSjnkUU5y1ur8swHaFj?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Ramallah">
+                <h3>Ramallah</h3>
+                <p>Ramallah is the administrative capital of the Palestinian Authority and is known for its vibrant
+                    cultural life.</p>
+                <ul>
+                    <li>Political and cultural center of Palestine</li>
+                    <li>Known for its lively arts scene</li>
+                    <li>Host to many international organizations</li>
+                </ul>
+            </div>
+            <div class="card">
+                <img src="https://c8.alamy.com/comp/2C3F107/deir-al-balah-the-gaza-strip-palestine-19th-june-2020-palestinians-at-deir-al-balah-city-beach-in-central-of-the-gaza-strip-credit-mahmoud-khattabquds-net-newszuma-wirealamy-live-news-2C3F107.jpg" alt="Deir al-Balah">
+                <h3>Deir al-Balah</h3>
+                <p>Deir al-Balah is located in the Gaza Strip and is known for its agricultural economy and historical
+                    sites.</p>
+                <ul>
+                    <li>Agricultural center in the Gaza Strip</li>
+                    <li>Rich in history and cultural heritage</li>
+                    <li>Known for its fertile land</li>
+                </ul>
+            </div>
+            <div class="card">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.BT_m0ic1WrHqabxPH0K-SwHaFj?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Gaza">
+                <h3>Gaza</h3>
+                <p>Gaza is one of the most populous areas in the region and has a rich history spanning thousands of
+                    years.</p>
+                <ul>
+                    <li>Known for its ancient history</li>
+                    <li>Rich cultural and political significance</li>
+                    <li>Major economic and urban center</li>
+                </ul>
+            </div>
+            <div class="card">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.gz_4XteCazBLIiquP1aQ7wHaEo?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Khan Yunis">
+                <h3>Khan Yunis</h3>
+                <p>Khan Yunis is located in the southern Gaza Strip, known for its rich history and agricultural
+                    activity.</p>
+                <ul>
+                    <li>Famous for its historical sites</li>
+                    <li>Rich agricultural landscape</li>
+                    <li>Strategically located near Egypt</li>
+                </ul>
+            </div>
+            <div class="card">
+                <img src="https://media.assettype.com/freepressjournal/2024-05/9b257ad3-a8ae-4d24-a674-ed5486f8597d/FPJ_CUSTOM_PIC__36_.jpg" alt="Rafah">
+                <h3>Rafah</h3>
+                <p>Rafah is located in the southern Gaza Strip and is known for its border crossing with Egypt.</p>
+                <ul>
+                    <li>Border crossing with Egypt</li>
+                    <li>Known for its role in regional trade</li>
+                    <li>Historical significance as a trade route</li>
+                </ul>
+            </div>
+            <div class="card">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-c/1280x250/05/ec/40/16/tulkarm.jpg" alt="Tulkarm">
+                <h3>Tulkarm</h3>
+                <p>Tulkarm is located in the northwestern West Bank, known for its agriculture and textile industries.
+                </p>
+                <ul>
+                    <li>Known for its agricultural products</li>
+                    <li>Rich in textile industry</li>
+                    <li>Strategic location for trade</li>
+                </ul>
+            </div>
+            <div class="card">
+                <img src="https://www.welcometopalestine.com/wp-content/uploads/2016/06/Tubas-3-1024x512.jpg" alt="Tubas">
+                <h3>Tubas</h3>
+                <p>Tubas is a city in the northeastern West Bank, known for its agricultural production and historical
+                    significance.</p>
+                <ul>
+                    <li>Known for its rich agricultural production</li>
+                    <li>Famous for its ancient ruins and landmarks</li>
+                    <li>Home to vibrant local markets</li>
+                </ul>
+            </div>
+            <div class="card">
+                <img src="https://static.timesofisrael.com/www/uploads/2017/12/City.of_.salfit.west_.bank_-400x250.jpg" alt="Salfit">
+                <h3>Salfit</h3>
+                <p>Salfit is located in the central West Bank, known for its agricultural activities and historical
+                    landmarks.</p>
+                <ul>
+                    <li>Rich agricultural history</li>
+                    <li>Famous for its olive oil production</li>
+                    <li>Historical landmarks and sites</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- نموذج الاتصال -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="POST">
+            <!-- الاسم -->
+            <input type="text" name="name" placeholder="Your Name" required title="Please enter your name.">
+
+            <!-- الموضوع -->
+            <input type="text" name="subject" placeholder="Subject" required title="Please enter a subject.">
+
+            <!-- رقم الهاتف مع التحقق من أن الرقم يتكون من أرقام فقط -->
+            <input type="tel" name="phone" placeholder="Phone Number" pattern="\d*" required
+                title="Phone number must contain only digits.">
+
+            <!-- البريد الإلكتروني، يجب أن يكون من نطاق @ftu.ac.th فقط -->
+            <input type="email" name="email" placeholder="Email" required pattern="[a-zA-Z0-9._%+-]+@ftu\.ac\.th"
+                title="Email must be from @ftu.ac.th domain."
+                oninvalid="this.setCustomValidity('Please enter an email that ends with @ftu.ac.th')"
+                oninput="this.setCustomValidity('')">
+
+            <!-- كلمة السر مع شروط (حروف كبيرة، حروف صغيرة، أرقام، وحروف خاصة) -->
+            <input type="password" name="secretword" placeholder="Secret Word" required
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*]).{8,}$"
+                title="Password must have at least one uppercase letter, one lowercase letter, one number, one special character, and be at least 8 characters long.">
+
+            <!-- رسالة المستخدم -->
+            <textarea name="message" placeholder="Your Message" required title="Please enter your message."></textarea>
+
+            <!-- زر إرسال -->
+            <button type="submit">Send</button>
+        </form>
+
+    </section>
+
+    <!-- التذييل الثابت في الأسفل -->
+    <footer id="bottom">
+        <p>&copy; 2025 Faris hb. All rights reserved.</p>
+    </footer>
+
+    <!-- زر العودة إلى الأعلى -->
+    <button id="goToTop" onclick="window.scrollTo(0, 0)">Go to Top</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
